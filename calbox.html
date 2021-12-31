@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+	# button{
+	
+	margine:5px;
+	padding:10px;
+	
+	
+	}
+	f1.t1{
+	margine:10px;
+	padding:15px;
+	color:grey;
+	}
+
+</style>
+</head>
+<body>
+			<script>
+			function add(){
+			f1.t3.value=eval(f1.t1.value)+eval(f1.t2.value);
+		
+			}
+			function sub(){
+			f1.t3.value=eval(f1.t1.value)-eval(f1.t2.value);
+			}
+			function mul(){
+			f1.t3.value=eval(f1.t1.value)*eval(f1.t2.value);
+			}
+			function div(){
+			f1.t3.value=eval(f1.t1.value)/eval(f1.t2.value);
+			}
+			function module(){
+			
+			f1.t3.value=eval(f1.t1.value)%eval(f1.t2.value);
+			}
+			</script>
+
+		<form name="f1">
+		<input type="text" name="t1"><br>
+		<input type="text" name="t2"><br>
+		
+		<input type="button" value="+" onclick="add()">
+		
+       <input type="button" value="-" onclick="sub()" >
+		<input type="button" value="*" onclick="mul()">
+		<input type="button" value="/"onclick="div()">
+		<input type="button" value="%"onclick="module()"><br>
+		<input type ="text" name="t3">
+		</form>
+		
+</body>
+
+</html>
